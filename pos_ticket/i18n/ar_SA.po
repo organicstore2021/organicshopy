@@ -1,0 +1,122 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* pos_ticket
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-14 18:13+0000\n"
+"PO-Revision-Date: 2018-11-14 18:13+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:111
+#, python-format
+msgid "% discount"
+msgstr "% discount"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:153
+#, python-format
+msgid "Change"
+msgstr "Change"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:33
+#, python-format
+msgid "Customer:"
+msgstr "Customer:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:55
+#, python-format
+msgid "Date:"
+msgstr "Date:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:147
+#, python-format
+msgid "Discount (SAR)"
+msgstr "Discount (SAR)"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:41
+#, python-format
+msgid "Inv No.:"
+msgstr "Inv No.:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:50
+#, python-format
+msgid "Paid"
+msgstr "Paid"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:133
+#, python-format
+msgid "Sub Total (SAR)"
+msgstr "Sub Total (SAR)"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:61
+#, python-format
+msgid "Time:"
+msgstr "Time:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:159
+#, python-format
+msgid "Total"
+msgstr "Total"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:47
+#, python-format
+msgid "Type:"
+msgstr "Type:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:27
+#, python-format
+msgid "User:"
+msgstr "User:"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:16
+#, python-format
+msgid "VAT #"
+msgstr "VAT #"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:140
+#, python-format
+msgid "VAT (5%)"
+msgstr "VAT (5%)"
+
+#. module: pos_ticket
+#. openerp-web
+#: code:addons/pos_ticket/static/src/xml/pos_ticket_view.xml:100
+#, python-format
+msgid "With a"
+msgstr "With a"
+

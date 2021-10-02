@@ -1,0 +1,60 @@
+<odoo>
+    <record id="product_multi_uom_price_form_view" model="ir.ui.view">
+        <field name="name">product.multi.uom.price.form.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='pos']" position="inside">
+                    <group name="uom_price" attrs="{'invisible': [('available_in_pos', '=', False)]}">
+                    	<field name="multi_uom_price_id" context="{'default_product_id': id}">
+                            <tree editable="bottom">
+                                <field name="product_id" invisible="1" />
+                                <field name="product_tem_id" invisible="1"/>
+                                <field name="category_id" invisible="0" /> 
+                                <field name="uom_id" options="{'no_create': True}"/>
+                                <field name="uom_barcode"/>
+                                <field name="price"/>
+                                <field name="is_defualt"/>
+                            </tree>
+                        </field>                                
+                    </group>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="product_multi_uom_price_tree_view">
+            <field name="name">product.multi.uom.price.tree.view</field>
+            <field name="model">product.multi.uom.price</field>
+            <field name="arch" type="xml">
+            <tree  delete="false" duplicate="false" multi_edit="1">
+                    <field name="product_id"/>
+                    <field name="product_tem_id" optional="hide"/>
+                    <field name="category_id"/>
+                    <field name="uom_id"/>
+                    <field name="price"/>
+                    <field name="uom_barcode"/>
+                    <field name="is_defualt"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- ************************************************************************ -->
+
+
+        <record id="action_product_multi_uom_price" model="ir.actions.act_window">
+            <field name="name">Product</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.multi.uom.price</field>
+            <field name="view_mode">list</field>
+            <field name="view_id" eval="False"/>
+        </record>
+
+
+        <menuitem id="product_multi_uom_price_menu_id" 
+                  name="Products Multi Unit" 
+                  action="action_product_multi_uom_price" 
+                  parent="stock.menu_stock_inventory_control" 
+                  sequence="6"/>
+
+</odoo>
