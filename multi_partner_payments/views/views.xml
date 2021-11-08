@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="seq_payments_customers" model="ir.sequence">
+            <field name="name">Customers multi payments</field>
+            <field name="code">multi.payment.customer</field>
+            <field name="prefix">CMP</field>
+            <field name="padding">3</field>
+        </record>
+
+
+        <record id="seq_payments_vendor" model="ir.sequence">
+            <field name="name">Vendors multi payments</field>
+            <field name="code">multi.payment.vendor</field>
+            <field name="prefix">VMP</field>
+            <field name="padding">3</field>
+        </record>
+
+
+        <record id="multi_payments_tree" model="ir.ui.view">
+            <field name="name">multi.payment.tree</field>
+            <field name="model">multi.payment</field>
+            <field name="arch" type="xml">
+                <tree string="Multi Customer Payment">
+                    <field name="name"/>
+                    <field name="date"/>
+                    <field name="accounting_date"/>
+                    <field name="journal_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="multi_payments_form" model="ir.ui.view">
+            <field name="name">multi.payment.form</field>
+            <field name="model">multi.payment</field>
+            <field name="arch" type="xml">
+                <form string="Multi Customer Payment">
+                    <header>
+                        <button name="post_multi_partner" class="oe_highlight post_button" states="draft" groups="account.group_account_invoice" string="Post" type="object"/>
+                        <button name="action_cancel" class="oe_highlight" states="draft" string="Cancel" type="object"/>
+                        <button name="action_draft" class="oe_highlight" states="posted,cancelled" string="Set To Draft" type="object"/>
+                        <button name="cancel" class="oe_highlight" states="posted" string="Set To Draft"
+                            type="object" groups="account.account_group_user"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+                    </header>
+                    <sheet>
+                       <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <field name="type" invisible="1"/>
+                        <group col="4">
+                            <field name="journal_id" string="Payment method" attrs="{'readonly': [('state', '!=', 'draft')]}" domain="[('type','in', ['cash','bank'])]"/>
+                            <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="accounting_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="ref" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="currency_id" attrs="{'readonly': [('state', '!=', 'draft')]}" groups="base.group_multi_currency"/>
+                            <field name="move_id" attrs="{'invisible': [('move_id', '=', False)]}" readonly="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Payment Details" attrs="{'readonly':[('state','!=','draft')]}" >
+                                <field name="payments_ids" attrs="{'readonly':[('state','!=','draft')]}" mode="tree">
+                                    <tree string="Payment Details" editable="bottom">
+                                        <field name="partner_id" />
+                                        <field name="name"/>
+                                        <field name="analytic_account" groups="analytic.group_analytic_accounting"/>
+                                        <field name="currency_id" invisible="1" force_save="1"/>
+                                        <field name="amount" required="1" sum="Payment Amount"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="multi_payments_form_vendor" model="ir.ui.view">
+            <field name="name">multi.payment.form</field>
+            <field name="model">multi.payment</field>
+            <field name="arch" type="xml">
+                <form string="Multi Vendor Payment">
+                    <header>
+                        <button name="post_multi_partner" class="oe_highlight post_button" states="draft" groups="account.group_account_invoice" string="Post" type="object"/>
+                        <button name="action_cancel" class="oe_highlight" states="draft" string="Cancel" type="object"/>
+                        <button name="action_draft" class="oe_highlight" states="cancelled" string="Set To Draft" type="object"/>
+                        <button name="cancel" class="oe_highlight" states="posted" string="Set To Draft"
+                            type="object" groups="account.account_group_user"/>
+                        <field name="state" widget="statusbar" statusbar_visible="draft,posted"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" readonly="1"/>
+                            </h1>
+                        </div>
+                        <field name="type" invisible="1"/>
+                        <group col="4">
+                            <field name="journal_id" string="Payment method" attrs="{'readonly': [('state', '!=', 'draft')]}" domain="[('type','in', ['cash','bank'])]"/>
+                            <field name="date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="accounting_date" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="ref" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                            <field name="currency_id" attrs="{'readonly': [('state', '!=', 'draft')]}" groups="base.group_multi_currency"/>
+                            <field name="move_id" attrs="{'invisible': [('move_id', '=', False)]}" readonly="1"/>
+                        </group>
+                        <notebook>
+                            <page string="Payment Details" attrs="{'readonly':[('state','!=','draft')]}" >
+                                <field name="payments_ids" attrs="{'readonly':[('state','!=','draft')]}" mode="tree">
+                                    <tree string="Payment Details" editable="bottom">
+                                        <field name="partner_id"/>
+                                        <field name="name"/>
+                                        <field name="analytic_account" groups="analytic.group_analytic_accounting"/>
+                                        <field name="currency_id" invisible="1" force_save="1"/>
+                                        <field name="amount" required="1" sum="Payment Amount"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_multi_account_payments" model="ir.actions.act_window">
+            <field name="name">Multi Payment</field>
+            <field name="res_model">multi.payment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_type': 'cash_in'}</field>
+            <field name="domain">[('type', '=', 'cash_in')]</field>
+            <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'tree'}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('multi_payments_form')})]"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                  Click to register a payment
+                </p>
+                <p>
+                  Payments are used to register liquidity movements (send, collect or transfer money).
+                  You can then process those payments by your own means or by using installed facilities.
+                </p>
+            </field>
+        </record>
+        <record id="action_multi_account_payments_vendor" model="ir.actions.act_window">
+            <field name="name">Multi Payment</field>
+            <field name="res_model">multi.payment</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'default_type': 'cash_out'}</field>
+            <field name="domain">[('type', '=', 'cash_out')]</field>
+            <field name="view_ids" eval="[
+            (5, 0, 0),
+            (0, 0, {'view_mode': 'tree'}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('multi_payments_form_vendor')})]"/>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                  Click to register a payment
+                </p>
+                <p>
+                  Payments are used to register liquidity movements (send, collect or transfer money).
+                  You can then process those payments by your own means or by using installed facilities.
+                </p>
+            </field>
+        </record>
+        <menuitem action="action_multi_account_payments" id="menu_action_multi_account_payments" parent="account.menu_finance_receivables" sequence="4" groups="account.group_account_invoice" name="Multi Payments"/>
+        <menuitem action="action_multi_account_payments_vendor" id="menu_action_multi_account_payments_vendor" parent="account.menu_finance_payables" sequence="4" groups="account.group_account_invoice" name="Multi Payments"/>
+    </data>
+</odoo>

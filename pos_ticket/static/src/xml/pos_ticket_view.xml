@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+
+    
+
+
+    <t t-extend="OrderReceipt">
+        <t t-jquery='.pos-receipt' t-operation='replace'>
+            <div class="pos-receipt">
+
+                <script type="text/javascript">
+
+                    var company_name = "<t t-esc="widget.pos.company.name"/>";
+                    var company_vat = "<t t-esc="widget.pos.company.vat"/>"; 
+                    var order_total_with_tax = "<t t-esc="widget.format_currency(order.get_total_with_tax())"/>"; 
+                    var order_total_tax = "<t t-esc="widget.format_currency(receipt.total_tax)"/>"; 
+                    var order_date =  "<t t-esc="moment(order.creation_date).format('DD/MM/YYYY')"/>"; 
+                    var order_time =  "<t t-esc="moment(order.creation_date).format('hh:mm')"/>"; 
+                    var name =  "<t t-esc='receipt.name' />"; 
+
+                    
+                    var qrcode = new QRCode('qrcode' , {
+                        width: 310,
+                        height: 310,
+                        colorDark : "#000000",
+                        colorLight : "#ffffff",
+                        correctLevel : QRCode.CorrectLevel.H
+                    });
+                    qrcode.makeCode(
+                        'اسم الشركة: ' + company_name + ' *** '+
+                        'الرقم الضريبي للشركة: ' + company_vat + ' *** '+
+                        'تاريخ الفاتورة: ' + order_date + ' *** '+
+                        'زمن الفاتورة: ' + order_time + ' *** '+
+                        'اجمالي الفاتروة شامل الضريبة: ' + order_total_with_tax + ' *** '+
+                        'اجمالي الضريبة: ' + order_total_tax
+                    );
+
+
+                    console.log(";; ;;        ", name)
+                    JsBarcode("#barcode", name, {
+                        format: "CODE39",
+                        displayValue: true,
+                        fontSize: 20
+                     });
+                </script>
+                <div>
+
+
+                    <!-- company logo -->
+                    <div>
+                        <img class="pos-receipt-logo" t-att-src='receipt.company.logo' alt="Logo"/>
+                    </div>
+
+
+
+                    <div style="width:100%;margin-top: 5px" class="pos-receipt-center-align">
+
+                        <!-- company name -->
+                        <div class="pos-receipt-center-align">
+                            <strong style="font-size:20px;" t-esc="widget.pos.company.name"/>
+                        </div>
+
+
+                        <br />
+                        <br />
+                        <!-- QRcode -->
+                        <div class="qrcode" id="qrcode" style="text-align:-webkit-center;"/>
+
+
+                        <div t-if="receipt.company.website">
+                            <t t-esc="receipt.company.website"/>
+                        </div>
+
+                        <!-- <div class="row">
+                            <i class="fa fa-home"/>
+                        </div> -->
+
+                        <div  t-if="receipt.header">
+                            <t t-esc="receipt.header"/>
+                        </div>
+
+                        <div t-if="widget.pos.company.vat"> 
+                            <t t-esc="widget.pos.company.vat"/> الرقم الضريبي
+                        </div>
+
+
+                        <div align="center" style="margin-top: 25px;">
+                            <img id="barcode" style="height: 100px;width:100%"/>
+                        </div>	
+
+
+                        <div class="pos-receipt-center-align">
+                            <p style="margin-top: 0px;">فـاتورة نقدية</p>
+                        </div>
+                        
+                        
+                        <div style="font-size:20px;"> 
+                            <strong t-esc='receipt.name' />
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+                 <br />
+
+                 <div class="orderlines">
+
+                    <t t-set="qty" t-value="0" />
+                    <table class='table table-sm' style="width:100%;direction:ltr">
+                        <thead>
+                            <tr style="border-bottom: dashed 2px black;border-top: dashed 2px black;">
+                                <th style='text-align:center;' width='25%'><p>السعر</p></th>
+                                <th style='text-align:center;' width='25%'><p>الكمية</p></th>
+                                <th style='text-align:right;' width='60%'><p>اسم الصنف</p></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr t-foreach="orderlines" t-as="orderline" style="border-bottom-width: 0.5px;
+                                border-bottom-color: black;
+                                border-bottom-style: dashed;">
+                                <td style='text-align:center;'>
+                                    <t t-esc="widget.format_currency_no_symbol(orderline.get_lst_price())"/>
+                                </td>
+                                <td style='text-align:center;'>
+                                    <t t-esc="orderline.quantityStr"></t>
+                                    <t t-set="qty" t-value="qty + orderline.quantity" />
+                                </td>
+                                <td style='text-align:right;padding-right:10px'>
+                                    <t t-esc="orderline.get_product().display_name"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td style='text-align:center;'>
+                                    <t t-esc="widget.format_currency_no_symbol(receipt.subtotal)"/>
+                                </td>
+                                <td style='text-align:center;'>
+                                    <t t-esc="qty"></t>
+                                </td>
+                                <td style='text-align:right;padding-right:10px'>
+                                    عدد الاصناف والمجموع
+                                </td>
+                            </tr>
+                        </tbody>
+                        
+                        
+                    </table>
+                </div>
+
+
+                <br />
+
+                <div id="total" class="row" name="total" style="direction: ltr;">
+                    
+                    <div class="col-12" >
+                        <table class="table table-sm" width="100%" style="direction: ltr;">
+                            <tr class="border-black o_subtotal" style="">
+                                <td name="td_amount_untaxed" class="pos-center-align" width="30%">
+                                    <span t-esc="widget.format_currency(receipt.subtotal)"/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" width="35%">
+                                    <div style='text-align:right;'>
+                                        <strong>المبلغ بدون القيمة المضافة</strong>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="">
+                                <td name="td_amount_untaxed" class="pos-center-align">
+                                    <span t-esc="widget.format_currency(receipt.total_tax)"/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" class="pos-right-align">
+                                    <div style='text-align:right;'>
+                                        <strong>‫إجمالي‬ ‫الضريبة‬</strong>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="">
+                                <td name="td_amount_untaxed" class="pos-center-align">
+                                    <span t-esc='widget.format_currency(receipt.total_discount)'/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" class="pos-right-align">
+                                    <div style='text-align:right;'>
+                                        <strong>اجمالي الحسم</strong>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="">
+                                <td name="td_amount_untaxed" class="pos-center-align">
+                                    <span t-esc="widget.format_currency(order.get_total_with_tax())"/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" class="pos-right-align">
+                                    <div style='text-align:right;'>
+                                        <strong>‫الإجمالي‬ الصافي</strong>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="">
+                                <td name="td_amount_untaxed" class="pos-center-align">
+                                    <t t-set="total_paid" t-value="0" />
+                                    <t t-foreach='paymentlines' t-as='line'>
+                                        <div>
+                                            <t t-set="total_paid" t-value="total_paid + line.get_amount()" />
+                                        </div>
+                                    </t>
+                                    <span t-esc="widget.format_currency(total_paid)"/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" class="pos-right-align">
+                                    <div style='text-align:right;'>
+                                        <strong>المدفوع</strong>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr style="">
+                                <td name="td_amount_untaxed" class="pos-center-align">
+                                    <span t-esc="widget.format_currency(receipt.change)"/>
+                                </td>
+                                <td name="td_amount_untaxed_label1" class="pos-right-align">
+                                    <div style='text-align:right;'>
+                                        <strong>المتبقي</strong>
+                                    </div>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+			    </div>
+
+                <br/>
+
+                <div style="border-bottom: dashed 2px black;border-top: dashed 2px black;">
+                    <t t-foreach='paymentlines' t-as='line'>
+                        <div>
+                            <t t-esc='line.name' />
+                            <span t-esc='widget.format_currency_no_symbol(line.get_amount())' class="pos-receipt-right-align"/>
+                        </div>
+                    </t>
+                </div>
+
+                <div t-if='receipt.cashier' class="pos-receipt-center-align">
+                    <div> 
+                        <t t-esc='receipt.cashier'/> :كاشير
+                    </div>
+                </div>
+
+                <div style="direction: ltr;">
+                    <table class='table table-sm' style="width:100%">
+                        <tr style="text-align:right">
+                            <td width="25%">
+                                <t t-esc="moment(order.creation_date).format('hh:mm')"/>
+                            </td>
+                            <td width="25%" style="text-align:center">
+                                <strong>الوقت</strong>
+                            </td>
+                            <td width="25%" >
+                                <t t-esc="moment(order.creation_date).format('DD/MM/YYYY')"/>
+                            </td>
+                            <td width="25%" style="text-align:center">
+                                <strong>التاريخ</strong>
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+
+
+                <br/>
+                <br/>
+
+
+                <div class="pos-receipt-center-align" style="text-align:center">
+                    <strong t-if="receipt.footer" style="text-align:center">
+                        <t t-esc="receipt.footer"/>
+                    </strong>
+                </div>
+
+
+                <div class="pos-receipt-center-align" style="text-align:center">
+                    <strong t-if="order.pos.config.thanks" style="text-align:center">
+                        <t t-esc="order.pos.config.thanks"/>
+                    </strong>
+                </div>
+                
+            </div>
+        </t>
+    </t>
+
+
+    <t t-extend="Chrome">
+        <t t-jquery='.pos-logo' t-operation='replace'>        
+            <img class="pos-logo" src="/web/binary/company_logo" />                    
+        </t>
+    </t>
+</templates>

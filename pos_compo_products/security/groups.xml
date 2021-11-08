@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+
+        <record id="account.group_show_product_and_quantity_in_invoice" model="res.groups">
+            <field name="name">Show Products and Quantity in Invoice </field>
+        </record>
+
+        <record id="access_own_pos" model="res.groups">
+            <field name="name">Access Own POS</field>
+        </record>
+
+        <record id="access_main_account_menu" model="res.groups">
+            <field name="name">Access Main Accounting Menu</field>
+        </record>
+
+        <record id="access_main_inventory_menu" model="res.groups">
+            <field name="name">Access Main Inventory Menu</field>
+        </record>
+
+        <record id="access_stock_account_configuration" model="res.groups">
+            <field name="name">Access Stock Accounts Configuration</field>
+        </record>
+
+        <record id="access_sale_only_available_qty" model="res.groups">
+            <field name="name">Sale Only Available Quantity</field>
+        </record>
+
+        <record id="access_journal_transfer_to_receive_from" model="res.groups">
+            <field name="name">Config Journal Transfer To and Receiving From</field>
+        </record>
+
+        <record id="access_cost_price_in_product" model="res.groups">
+            <field name="name">Cost Price In Product</field>
+        </record>
+
+        <record id="access_inventory_at_date_report" model="res.groups">
+            <field name="name">Inventory at Date</field>
+        </record>
+
+    </data>
+</odoo>

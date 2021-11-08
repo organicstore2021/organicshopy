@@ -1,0 +1,1553 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vegetables
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-24 11:42+0000\n"
+"PO-Revision-Date: 2018-05-24 11:42+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vegetables
+#: model:mail.template,body_html:vegetables.mail_template_vegetables_account_invoice
+msgid "\n"
+"                \n"
+"<p>Dear ${object.partner_id.name}\n"
+"                    \n"
+"                \n"
+"            "
+msgstr "\n"
+"                \n"
+"<p>Dear ${object.partner_id.name}\n"
+"                    \n"
+"                \n"
+"            "
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice_compute.py:434
+#: code:addons/vegetables/models/vendors_invoice_compute.py:444
+#: code:addons/vegetables/models/vendors_invoice_compute.py:588
+#: code:addons/vegetables/models/vendors_invoice_compute.py:599
+#, python-format
+msgid " Driver: "
+msgstr "السائق: "
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice_compute.py:435
+#: code:addons/vegetables/models/vendors_invoice_compute.py:445
+#: code:addons/vegetables/models/vendors_invoice_compute.py:589
+#: code:addons/vegetables/models/vendors_invoice_compute.py:600
+#, python-format
+msgid " Postal Number: "
+msgstr "رقم الإرسالية: "
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice_compute.py:436
+#: code:addons/vegetables/models/vendors_invoice_compute.py:446
+#: code:addons/vegetables/models/vendors_invoice_compute.py:590
+#: code:addons/vegetables/models/vendors_invoice_compute.py:601
+#, python-format
+msgid " Transmission Date: "
+msgstr "تاريخ الإرسالية"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:306
+#: code:addons/vegetables/models/vendors_invoice_compute.py:343
+#, python-format
+msgid " has exceeded the limit of credential..! "
+msgstr " قد تجاوز حد الاعتماد المحدد له ..!"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:337
+#: code:addons/vegetables/models/vendors_invoice.py:468
+#: code:addons/vegetables/models/vendors_invoice_compute.py:384
+#: code:addons/vegetables/models/vendors_invoice_compute.py:532
+#, python-format
+msgid " has no sale price!"
+msgstr "ليس لديه سعر بيع"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customers_inv_moves_rep
+msgid "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>\n"
+"                                    of\n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+msgstr "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>\n"
+"                                    of\n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.report_daily_inv_report
+msgid "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>                        of                                                                                                                                                                                                                                                                                                                                                                                                                                                \n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+msgstr "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>                        of                                                                                                                                                                                                                                                                                                                                                                                                                                                \n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.report_daily_inv_group_date_report
+msgid "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>                        of                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+msgstr "<small>\n"
+"                                    <span>Page</span>\n"
+"                                    <span class=\"page\"/>                        of                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \n"
+"                                    <span class=\"topage\"/>\n"
+"                                </small>"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.print_customer_invoice_main_template
+#: model:ir.ui.view,arch_db:vegetables.print_customer_invoice_main_template_2
+msgid "<span style=\"font-size: 9px;\">of</span>"
+msgstr "<span style=\"font-size: 9px;\">of</span>"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.print_customer_invoice_main_template
+#: model:ir.ui.view,arch_db:vegetables.print_customer_invoice_main_template_2
+msgid "<span>Vat:</span>"
+msgstr "<span>Vat:</span>"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_credit_account
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_account
+msgid "Account"
+msgstr "حساب"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_active_credit_limit
+#: model:ir.model.fields,field_description:vegetables.field_res_users_active_credit_limit
+msgid "Activate Credit Limit"
+msgstr "تفعيل حد الاعتماد"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.vegetables_root_menu
+msgid "Agricultural Marketing"
+msgstr "التسويق الزراعي"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.vegetables_all_customers_invoices_label_menu
+msgid "All Customers Invoices"
+msgstr "تصدير فواتير العملاء"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "All Invoices"
+msgstr "كل الفواتير"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_amount
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_ar_name
+msgid "Arabic Name"
+msgstr "الإسم العربي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_customer_code
+msgid "C-Code"
+msgstr "الكود"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "C-Total"
+msgstr "مجموع العميل"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice_compute.py:505
+#, python-format
+msgid "Can't update more than 10 records...!"
+msgstr "لا يمكن تحديث اكتر من عشرة فواتير...!"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customers_inv_rep_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_group_date_report_report_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_report_report_view
+#: model:ir.ui.view,arch_db:vegetables.post_customers_invoices_wizard_view_form
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: vegetables
+#: selection:account.invoice.line,state:0
+#: selection:vegetables.customer.email.report,except_state:0
+#: selection:vegetables.customer.email.report,state:0
+msgid "Cancelled"
+msgstr "تم الإلغاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_cash_account
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_cash_account
+msgid "Cash Account"
+msgstr "حساب الكاش"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_cash_amount
+msgid "Cash Amount"
+msgstr "مبلغ الكاش"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_cash_custody
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_credit_custody
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_credit_sales
+msgid "Cash Custody Total"
+msgstr "مجموع المصاريف"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Cash Total"
+msgstr "مجموع الكاش"
+
+#. module: vegetables
+#: model:ir.actions.act_window,help:vegetables.vegetables_res_partner_supplier_groups_action
+msgid "Click to create a group for Supplier."
+msgstr "إضغط لاضافة مجموعات الموردين"
+
+#. module: vegetables
+#: model:ir.actions.act_window,help:vegetables.vegetables_res_partner_groups_action
+msgid "Click to create a group for customer."
+msgstr "إضغط لاضافة مجموعات العملاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_code
+#: model:ir.model.fields,field_description:vegetables.field_res_users_code
+#: model:ir.ui.view,arch_db:vegetables.vegetables_hr_employee_add_page
+msgid "Code"
+msgstr "الكود"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_commision
+msgid "Commision"
+msgstr "العمولة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:428
+#: code:addons/vegetables/models/vendors_invoice_compute.py:481
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_supplier_commission
+#: model:ir.model.fields,field_description:vegetables.field_res_users_supplier_commission
+#, python-format
+msgid "Commission"
+msgstr "العمولة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_commission_account
+msgid "Commission Account"
+msgstr "حساب العمولة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_commision_total_amount
+msgid "Commission Amount"
+msgstr "حساب النسبة"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_res_company
+msgid "Companies"
+msgstr "المؤسسات"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_create_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_create_date
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_create_date
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_create_date
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_create_date
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_create_date
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_create_date
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_create_date
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_create_date
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_create_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_create_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_create_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_credit_account
+msgid "Credit Account"
+msgstr "الحساب الآجل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_credit_amount
+msgid "Credit Amount"
+msgstr "المبلغ الآجل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Credit Total"
+msgstr "مجموع الآجل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_currency_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_currency_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_currency_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_custody_tree_view
+#: model:ir.ui.view,arch_db:vegetables.vegetables_custody_view
+msgid "Custody"
+msgstr "العهدة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_account_id
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_custody_account
+msgid "Custody Account"
+msgstr "حساب الآجل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_customer_form
+msgid "Custody Accounts"
+msgstr "حساب العهدة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_accounts_ids
+msgid "Custody Accounts Lines"
+msgstr "تفاصيل المصاريف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_custody_lines
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Custody Lines"
+msgstr "قيود المصاريف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_custody_name
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_custody_name
+msgid "Custody Name"
+msgstr "إسم العهدة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_custody_total
+msgid "Custody Total"
+msgstr "مجموع المصاريف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_custody_type
+msgid "Custody Type"
+msgstr "نوع العهدة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_linked_customer
+msgid "Customer"
+msgstr "العميل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_partner_code
+msgid "Customer Code"
+msgstr "كود العميل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_res_partner_groups_form_view
+#: model:ir.ui.view,arch_db:vegetables.vegetables_res_partner_groups_tree_view
+msgid "Customer Groups"
+msgstr "مجموعة العميل"
+
+#. module: vegetables
+#: model:ir.actions.report.xml,name:vegetables.print_customer_invoice_action
+#: model:ir.actions.report.xml,name:vegetables.vegetables_account_invoices
+#: model:ir.ui.menu,name:vegetables.vegetables_customer_invoice_label_menu
+msgid "Customer Invoice"
+msgstr "فاتورة العميل"
+
+#. module: vegetables
+#: model:ir.actions.report.xml,name:vegetables.print_customer_invoice_action_2
+msgid "Customer Invoice 2"
+msgstr "Customer Invoice 2"
+
+#. module: vegetables
+#: model:res.groups,name:vegetables.customer_invoices_movement_group
+msgid "Customer Invoices Movement Report"
+msgstr "حركة فواتير العملاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_customer_id
+msgid "Customer Name"
+msgstr "إسم العميل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_customer_total_amount
+#: model:ir.model.fields,field_description:vegetables.field_res_users_customer_total_amount
+msgid "Customer Total Amount"
+msgstr "العملاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_customer_account_invoice_ids
+#: model:ir.model.fields,field_description:vegetables.field_res_users_customer_account_invoice_ids
+msgid "Customer account invoice ids"
+msgstr "Customer account invoice ids"
+
+#. module: vegetables
+#: code:addons/vegetables/models/res_partner.py:18
+#, python-format
+msgid "Customer name must be unique...!"
+msgstr "إسم العميل يجب الا يتكرر...!"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_customers
+msgid "Customers"
+msgstr "العملاء"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.action_daily_inv_report_wizard
+#: model:ir.ui.menu,name:vegetables.view_daily_inv_tree_menu
+msgid "Daily Clients Invoices"
+msgstr "متابعة الفواتير"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.action_daily_inv_group_date_report_wizard
+#: model:ir.ui.menu,name:vegetables.view_daily_inv_group_date_tree_menu
+msgid "Daily Clients Invoices Group By Date"
+msgstr "مطابقة فواتير العميل"
+
+#. module: vegetables
+#: model:res.groups,name:vegetables.daily_clients_invoices_group
+msgid "Daily Clients Invoices Report"
+msgstr "تقرير متابعة فواتير العملاء"
+
+#. module: vegetables
+#: model:ir.actions.report.xml,name:vegetables.action_report_daily_inv_group_date_report
+#: model:ir.actions.report.xml,name:vegetables.action_report_daily_inv_report
+msgid "Daily Invoice Report"
+msgstr "متابعة الفواتير"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_date_from
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_except_date_from
+msgid "Date From"
+msgstr "من تاريخ"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "Date Range"
+msgstr "الفترة الزمنية"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_date_to
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_except_date_to
+msgid "Date To"
+msgstr "الى"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_department_id
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_department_id
+#: model:ir.model.fields,field_description:vegetables.field_res_company_default_department_id
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_department_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_department_id
+msgid "Department"
+msgstr "القسم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_department_ids
+#: model:ir.model.fields,field_description:vegetables.field_res_users_department_ids
+msgid "Department ids"
+msgstr "Department ids"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_view_partner_form
+msgid "Departments"
+msgstr "الأقسام"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_custody_view
+#: model:ir.ui.view,arch_db:vegetables.vegetables_res_partner_groups_form_view
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_difference
+#: model:ir.model.fields,field_description:vegetables.field_res_users_difference
+msgid "Difference"
+msgstr "الفرق"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_discount_amount
+msgid "Dis Amount"
+msgstr "مبلغ الخصم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_discount_percentage_total
+msgid "Dis Percentage Total"
+msgstr "نسبة الخصم الكلية"
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:278
+#: code:addons/vegetables/models/customer_invoice.py:413
+#, python-format
+msgid "Discount"
+msgstr "خصم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_discount_account
+#: model:ir.model.fields,field_description:vegetables.field_res_users_discount_account
+msgid "Discount Account"
+msgstr "حساب الخصم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_total_discount_amount
+msgid "Discount Amount"
+msgstr "مبلغ الخصم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_total_percentage_discount_amount
+msgid "Discount Percentage Amount"
+msgstr "مبلغ نسبة الخصم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_display_name
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_display_name
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_display_name
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_display_name
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_customers_inv_moves_rep_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template_2_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_vendor_invoice_template_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_group_date_report_display_name
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_report_display_name
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_display_name
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_display_name
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_display_name
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_display_name
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_display_name
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_display_name
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: vegetables
+#: selection:account.invoice.line,state:0
+#: selection:vegetables.customer.email.report,except_state:0
+#: selection:vegetables.customer.email.report,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_driver_name
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_driver_name
+msgid "Driver"
+msgstr "إسم السائق"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_edit_product_id
+msgid "Edit product id"
+msgstr "تعديل المنتج"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_edited
+msgid "Edited"
+msgstr "تم تعديله"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_email_status
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_email_status
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_except_email_status
+msgid "Email Status"
+msgstr "حالة ارسال الايميل"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_date_to
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_date_to
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_date_to
+msgid "End Date"
+msgstr "تاريخ الإنتهاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_except_state
+msgid "Except state"
+msgstr "الحالة المستثناء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_executed_line
+msgid "Executed"
+msgstr "مربوط مع فاتورة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_executed_quantity
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_executed_quantity
+msgid "Executed Quantity"
+msgstr "الكمية المُرحلة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_expense_account
+#: model:ir.model.fields,field_description:vegetables.field_res_users_expense_account
+msgid "Expense Account"
+msgstr "حساب المصروف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_first_group
+#: model:ir.model.fields,field_description:vegetables.field_res_users_first_group
+msgid "First Group"
+msgstr "المجموعة"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.customers_inv_moves_rep_menu
+msgid "Follow Receipt for Customers"
+msgstr "متابعة إستلام البضاعة"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.action_customers_inv_rep
+#: model:res.groups,name:vegetables.follow_receipt_customers_group
+msgid "Follow Receipt for Customers Report"
+msgstr "متابعة إستلام البضاعة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_forth_group
+#: model:ir.model.fields,field_description:vegetables.field_res_users_forth_group
+msgid "Forth Group"
+msgstr "المجموعة الرابعة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_fifth_group
+#: model:ir.model.fields,field_description:vegetables.field_res_users_fifth_group
+msgid "Group"
+msgstr "المجموعة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_name
+msgid "Group Name"
+msgstr "اسم المجموعة"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.vegetables_res_partner_groups_action
+#: model:ir.actions.act_window,name:vegetables.vegetables_res_partner_supplier_groups_action
+#: model:ir.ui.menu,name:vegetables.vegetables_res_partner_customer_menu
+#: model:ir.ui.menu,name:vegetables.vegetables_res_partner_supplier_menu
+msgid "Groups"
+msgstr "المجموعات"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_has_taxes
+msgid "Has Tax"
+msgstr "عليه ضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_has_taxes
+#: model:ir.model.fields,field_description:vegetables.field_res_users_has_taxes
+msgid "Has Taxes"
+msgstr "لديه ضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_id
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_id
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_id
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_id
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_customers_inv_moves_rep_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template_2_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_vendor_invoice_template_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_group_date_report_id
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_report_id
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_id
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_id
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_id
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: vegetables
+#: selection:vegetables.custody,custody_type:0
+#: selection:vendors.custody.line,custody_type:0
+msgid "IS Cash"
+msgstr "نقدي"
+
+#. module: vegetables
+#: selection:vegetables.custody,custody_type:0
+#: selection:vendors.custody.line,custody_type:0
+msgid "IS Credit"
+msgstr "آجل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_is_rental
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_is_rental
+msgid "IS Rental"
+msgstr "إيجار"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_is_sales_man
+msgid "IS Sales Man"
+msgstr "بائع"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_is_sales_manger
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_sales_man_is_manger
+msgid "IS Sales Manger"
+msgstr "مشرف مبيعات"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:46
+#, python-format
+msgid "Invalid invoice number, this number not found in vendor invoice numbers range."
+msgstr "الرقم اليدوي غير صحيح, هذا الرقم غير مدرج ضمن اي دفتر على النظام...!"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_account_invoice
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_invoice_id
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_search_sequence
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_tree_view
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Invoice"
+msgstr "الفاتورة"
+
+#. module: vegetables
+#: model:mail.template,subject:vegetables.mail_template_vegetables_account_invoice
+msgid "Invoice ${object.sequence_number or object.number}"
+msgstr "Invoice ${object.sequence_number or object.number}"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_invoice_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_invoice_date
+msgid "Invoice Date"
+msgstr "تاريخ الفاتورة"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "بند الفاتورة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_invoice_line
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Invoice Lines"
+msgstr "خطوط الفاتوره "
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_name
+msgid "Signal No."
+msgstr "رقم الإشارة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_vendor_invoice_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_vendor_invoice_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_vendor_invoice_id
+msgid "Invoice Reference"
+msgstr "مرجع الفاتورة"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_account_invoice_custody
+msgid "Invoice Salesman Custody"
+msgstr "حساب عهدة البائع"
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:322
+#, python-format
+msgid "Invoice must be in draft or Pro-forma state in order to validate it."
+msgstr "لا يمكن تاكيد الفواتير لانها ليست في حالة \"مسودة\""
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:535
+#: code:addons/vegetables/models/vendors_invoice_compute.py:605
+#, python-format
+msgid "Invoice value is less than expenses"
+msgstr "قيمة الفاتورة اقل من المصاريف"
+
+#. module: vegetables
+#: model:mail.template,report_name:vegetables.mail_template_vegetables_account_invoice
+msgid "Invoice_${(object.sequence_number or '').replace('/','_')}_${object.state == 'draft' and 'draft' or ''}"
+msgstr "Invoice_${(object.sequence_number or '').replace('/','_')}_${object.state == 'draft' and 'draft' or ''}"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.vegetables_main_label
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_graph_view
+msgid "Invoices"
+msgstr "الفواتير"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_is_cash
+#: model:ir.model.fields,field_description:vegetables.field_res_users_is_cash
+msgid "Is Cash"
+msgstr "نقدي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_is_complex
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_is_complex
+msgid "Is Complex"
+msgstr "مصروف مجمع"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_account_move_id
+msgid "Journal Entry"
+msgstr "قيد يومية"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody___last_update
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard___last_update
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard___last_update
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard___last_update
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_customers_inv_moves_rep___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template_2___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_customer_invoice_main_template___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_print_vendor_invoice_template___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_group_date_report___last_update
+#: model:ir.model.fields,field_description:vegetables.field_report_vegetables_report_daily_inv_report___last_update
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups___last_update
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department___last_update
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody___last_update
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report___last_update
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line___last_update
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice___last_update
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line___last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_write_uid
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_custody_write_date
+#: model:ir.model.fields,field_description:vegetables.field_all_customers_invoices_wizard_write_date
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_write_date
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_write_date
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_write_date
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_write_date
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_write_date
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_write_date
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_write_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_write_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_write_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_legacy_amount
+msgid "Legacy amount"
+msgstr "المبلغ القديم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_main_customer_total_amount
+msgid "Main Customer Total"
+msgstr "مجموع العميل الاساسي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_main_customer_total_untaxed
+msgid "Main Customer Untaxed"
+msgstr "العميل الاساسي من غير الضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_edited
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_filter
+msgid "Modified"
+msgstr "تم تعديله"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_partner_custom_search
+msgid "My Partners"
+msgstr "شركائي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_net_total
+msgid "Net Total"
+msgstr "صافي الفاتورة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:132
+#: code:addons/vegetables/models/vendors_invoice_compute.py:158
+#, python-format
+msgid "New"
+msgstr "جديد"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "Not Include"
+msgstr "استثناء التالي"
+
+#. module: vegetables
+#: selection:account.invoice,email_status:0
+#: selection:vegetables.customer.email.report,email_status:0
+#: selection:vegetables.customer.email.report,except_email_status:0
+msgid "Not Sent"
+msgstr "لم يتم ارساله"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_note
+msgid "Note"
+msgstr "الملاحظة"
+
+#. module: vegetables
+#: selection:account.invoice.line,state:0
+#: selection:vegetables.customer.email.report,except_state:0
+#: selection:vegetables.customer.email.report,state:0
+msgid "Open"
+msgstr "مفتوحة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_product_code
+msgid "P-Code"
+msgstr "الكود"
+
+#. module: vegetables
+#: selection:account.invoice.line,state:0
+#: selection:vegetables.customer.email.report,except_state:0
+#: selection:vegetables.customer.email.report,state:0
+msgid "Paid"
+msgstr "تم السداد"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_parent_group
+msgid "Parent Group"
+msgstr "المجموعة الام"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_res_partner
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_partner_id
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_partner_id
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_partner_id
+msgid "Partner"
+msgstr "شريك"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_partner_id
+msgid "Partner id"
+msgstr "معرف الشريك"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_partners_ids
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_partners_tree
+msgid "Partners"
+msgstr "الشركاء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_payed_amount
+msgid "Payed Amount"
+msgstr "المبلغ المدفوع"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_filter
+msgid "Period"
+msgstr "فترة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:206
+#, python-format
+msgid "Please create some invoice lines."
+msgstr "الرجاء اضافة اصناف للفاتورة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:204
+#, python-format
+msgid "Please define sequence on the journal related to this invoice."
+msgstr "الرجاء اضافة تسلسل لليومية المستخدمة في الفاتورة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/res_partner.py:113
+#, python-format
+msgid "Please enter commission percentage for vendor"
+msgstr "الرجاء اضافة نسبة المورد"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:289
+#: code:addons/vegetables/models/vendors_invoice_compute.py:326
+#, python-format
+msgid "Please select account for custody "
+msgstr "الرجاء اختيار حساب للمصروف: "
+
+#. module: vegetables
+#: model:ir.actions.server,name:vegetables.vegetables_post_action_server
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Post"
+msgstr "ترحيل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.post_customers_invoices_wizard_view_form
+msgid "Post All Customers Invoices"
+msgstr "ترحيل فواتير كل العملاء"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.post_customers_invoices_wizard_action
+msgid "Post All invoices"
+msgstr "ترحيل كل الفواتير"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_postal_number
+msgid "Postal Number"
+msgstr "رقم الإرسالية"
+
+#. module: vegetables
+#: selection:vendors.invoice,state:0
+msgid "Posted"
+msgstr "تم الترحيل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_group_date_report_report_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_report_report_view
+msgid "Print"
+msgstr "طباعة"
+
+#. module: vegetables
+#: selection:account.invoice.line,state:0
+msgid "Pro-forma"
+msgstr "Pro-forma"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_product_id
+msgid "Product"
+msgstr "منتج"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_customer_form
+msgid "Product Details"
+msgstr "تفاصيل المنتج"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Products"
+msgstr "المنتجات"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_purchase_price
+msgid "Purchase Price"
+msgstr "سعر الشراء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_purchase_taxes_total
+msgid "Purchase Tax"
+msgstr "ضريبة الشراء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_purchase_taxes
+msgid "Purchase Taxes"
+msgstr "ضريبة الشراء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_product_qty
+msgid "Quantity"
+msgstr "كمية"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.sale_pdf_report
+msgid "Reports"
+msgstr "التقارير"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_salesperson_ids
+msgid "Salepersons"
+msgstr "Salepersons"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_sales_man_id
+#: model:ir.model.fields,field_description:vegetables.field_supplier_department_sales_man_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_sales_man_id
+#: selection:vegetables.custody,sales_man:0
+#: selection:vendors.custody.line,sales_man:0
+msgid "Sales Man"
+msgstr "البائع"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_custody_type
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_sales_man
+#: model:ir.model.fields,field_description:vegetables.field_vendors_custody_line_sales_man
+msgid "Sales Man Type"
+msgstr "نوع البائع"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_salesperson_id
+msgid "Salesperson"
+msgstr "حركة المندوب التفصيلي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_second_group
+#: model:ir.model.fields,field_description:vegetables.field_res_users_second_group
+msgid "Second Group"
+msgstr "المجموعة الثانية"
+
+#. module: vegetables
+#: code:addons/vegetables/wizard/post_customers_ivnoices.py:98
+#, python-format
+msgid "Selected invoice(s) cannot be confirmed as they are not in 'Draft' state."
+msgstr "لا يمكن تاكيد الفواتير لانها ليست في حالة \"مسودة\""
+
+#. module: vegetables
+#: selection:account.invoice,email_status:0
+#: selection:vegetables.customer.email.report,email_status:0
+#: selection:vegetables.customer.email.report,except_email_status:0
+msgid "Sent"
+msgstr "تم الارسال"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.vegetables_customer_sent_emails_action
+#: model:ir.ui.menu,name:vegetables.vegetables_menu_customer_sent_emails
+msgid "Sent Invoices Report"
+msgstr "تقرير ارسال الفواتير بالايميل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_sequence
+msgid "Sequence"
+msgstr "المسلسل"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_search_sequence
+msgid "Sequence Number"
+msgstr "الرقم التسلسلي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_sequence_number
+msgid "Sequence number"
+msgstr "الرقم التسلسلي"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customers_inv_rep_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_report_report_view
+msgid "Show"
+msgstr "رؤية"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_postal_number
+msgid "Signal Number"
+msgstr "رقم الإشعار"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_date_from
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_group_date_report_wizard_date_from
+#: model:ir.model.fields,field_description:vegetables.field_daily_inv_report_wizard_date_from
+msgid "Start Date"
+msgstr "تاريخ البدء"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_customer_email_report_state
+msgid "State"
+msgstr "المحافظة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_state
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_state
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_state
+msgid "Status"
+msgstr "الحاله "
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_total_price
+msgid "Sub Total"
+msgstr "المجموع الفرعي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_hr_employee_supervisor
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_supervisor_id
+#: selection:vegetables.custody,sales_man:0
+#: selection:vendors.custody.line,sales_man:0
+msgid "Supervisor"
+msgstr "المشرف"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_customers_invoices_rep_wizard_suppliers
+msgid "Suppliers"
+msgstr "الموردين"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "TAX"
+msgstr "الضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_tax
+msgid "Tax %"
+msgstr "قيمة الضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vegetables_custody_tax_account
+msgid "Tax Account"
+msgstr "حساب الضرائب"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_tax_amount
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_taxes_amount
+msgid "Tax Amount"
+msgstr "مبلغ الضريبة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_tax_number
+#: model:ir.model.fields,field_description:vegetables.field_res_users_tax_number
+msgid "Tax Number"
+msgstr "الرقم الضريبي"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_taxes_id
+msgid "Taxes"
+msgstr "الضرائب"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_write_text
+msgid "Text"
+msgstr "النّص"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:316
+#: code:addons/vegetables/models/vendors_invoice_compute.py:349
+#, python-format
+msgid "There is no journal items in draft state to post."
+msgstr "لا توجد عناصر دفتر يومية في حالة المسودة ليتم ترحيلها."
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_third_group
+#: model:ir.model.fields,field_description:vegetables.field_res_users_third_group
+msgid "Third Group"
+msgstr "المجموعة الثالثة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:36
+#, python-format
+msgid "This number is reserved in another vendor invoice..!"
+msgstr "هذا الرقم مستخدم مسبقا في فاتورة مورد...!"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_filter
+msgid "Today Invoices"
+msgstr "فواتير اليوم"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_amount_total
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_tree_view
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Total"
+msgstr "الإجمالي "
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "Total Of Total"
+msgstr "اجمالي المجموع"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "Total Of price"
+msgstr "اجمالي السعر"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_total_taxed_amount
+msgid "Total Taxes"
+msgstr "إجمالي الضرائب"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_transmission_date
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_transmission_date
+msgid "Transmission Date"
+msgstr "تاريخ الإرسالية"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_transmission_number
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_transmission_number
+msgid "Transmission Number"
+msgstr "رقم الفاتورة"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:386
+#: code:addons/vegetables/models/vendors_invoice.py:393
+#: code:addons/vegetables/models/vendors_invoice.py:524
+#: code:addons/vegetables/models/vendors_invoice.py:531
+#: code:addons/vegetables/models/vendors_invoice_compute.py:433
+#: code:addons/vegetables/models/vendors_invoice_compute.py:443
+#: code:addons/vegetables/models/vendors_invoice_compute.py:587
+#: code:addons/vegetables/models/vendors_invoice_compute.py:598
+#, python-format
+msgid "Transmission Number: "
+msgstr "رقم الارسالية: "
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_groups_type
+msgid "Type"
+msgstr "نوع"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_filter
+msgid "Un Posted"
+msgstr "غير المرحلة"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Unit"
+msgstr "الوحدة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_unit_price
+msgid "Unit Price"
+msgstr "سعر الوحده "
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_line_uom_id
+msgid "Unit of Measure"
+msgstr "وحده القياس "
+
+#. module: vegetables
+#: selection:vendors.invoice,state:0
+msgid "Unpost"
+msgstr "غير مرحلة"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_untaxes_total
+msgid "Untaxed Total"
+msgstr "المجموع من غير ضريبة"
+
+#. module: vegetables
+#: model:ir.actions.server,name:vegetables.vegetables_update_info_action_customer_server
+#: model:ir.actions.server,name:vegetables.vegetables_update_info_action_server
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_customer_form
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_view
+msgid "Update Info"
+msgstr "تحديث البيانات"
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:405
+#, python-format
+msgid "VAT out "
+msgstr "VAT out "
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.post_customers_invoices_wizard_view_form
+msgid "Validate"
+msgstr "تحقق"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_hr_employee_add_page
+msgid "Vegetables"
+msgstr "التسويق الزراعي"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.vegetables_custody_action
+msgid "Vegetables Custody"
+msgstr "عُهد الخضروات"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_vendors_custody_line
+msgid "Vegetables Custody Line"
+msgstr "قيود عهد الخضروات"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_vendors_invoice_line
+msgid "Vegetables Vendors Invoice Line"
+msgstr "خطوط فاتورة المورد"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "Vendor"
+msgstr "المورّد"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_vendor_code
+msgid "Vendor Code"
+msgstr "كود المورد"
+
+#. module: vegetables
+#: model:ir.actions.act_window,name:vegetables.vegetables_vendor_invoice_action
+#: model:ir.actions.report.xml,name:vegetables.print_vendor_invoice_action
+#: model:ir.model,name:vegetables.model_vendors_invoice
+#: model:ir.ui.view,arch_db:vegetables.vegetables_invoice_customer_form
+msgid "Vendor Invoice"
+msgstr "فواتير الموردين"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_vendor_id
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_vendor_id
+msgid "Vendor Name"
+msgstr "اسم المورد"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_vendor_invoice_sequence
+#: model:ir.model.fields,field_description:vegetables.field_res_users_vendor_invoice_sequence
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_vendor_sequence
+msgid "Vendor Sequence"
+msgstr "تسلسل فواتير المورد"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_vendor_total_amount
+#: model:ir.model.fields,field_description:vegetables.field_res_users_vendor_total_amount
+msgid "Vendor Total Amount"
+msgstr "الموردين"
+
+#. module: vegetables
+#: code:addons/vegetables/models/res_partner.py:14
+#, python-format
+msgid "Vendor name must be unique...!"
+msgstr "اسم المورد يجب الا يتكرر...!"
+
+#. module: vegetables
+#: model:ir.ui.menu,name:vegetables.vegetables_vendor_invoice_label_menu
+#: model:ir.ui.view,arch_db:vegetables.vegetables_vendor_invoice_filter
+msgid "Vendors Invoice"
+msgstr "فواتير الموردين"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_res_partner_vendors_invoice_line_ids
+#: model:ir.model.fields,field_description:vegetables.field_res_users_vendors_invoice_line_ids
+msgid "Vendors invoice line ids"
+msgstr "Vendors invoice line ids"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_version_number
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_version_number
+msgid "Version Number"
+msgstr "مرات التحديث"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "View Invoices"
+msgstr "عرض الفواتير"
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:239
+#: code:addons/vegetables/models/vendors_invoice_compute.py:274
+#, python-format
+msgid "You cannot save this invoice. please add product."
+msgstr "الرجاء إضافة منتجات."
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:329
+#: code:addons/vegetables/models/vendors_invoice.py:460
+#: code:addons/vegetables/models/vendors_invoice_compute.py:376
+#: code:addons/vegetables/models/vendors_invoice_compute.py:524
+#, python-format
+msgid "You should link custody account in sales man page "
+msgstr "يجب إضافة حساب عهدة للبائع."
+
+#. module: vegetables
+#: code:addons/vegetables/models/vendors_invoice.py:333
+#: code:addons/vegetables/models/vendors_invoice.py:464
+#: code:addons/vegetables/models/vendors_invoice_compute.py:380
+#: code:addons/vegetables/models/vendors_invoice_compute.py:528
+#, python-format
+msgid "You should select Account in "
+msgstr "يجب إختيار حساب في "
+
+#. module: vegetables
+#: code:addons/vegetables/models/customer_invoice.py:40
+#: code:addons/vegetables/models/customer_invoice.py:42
+#, python-format
+msgid "_New"
+msgstr "جديد"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_all_customers_invoices_wizard
+msgid "all.customers.invoices.wizard"
+msgstr "all.customers.invoices.wizard"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "customer"
+msgstr "العميل"
+
+#. module: vegetables
+#: code:addons/vegetables/models/res_partner.py:101
+#, python-format
+msgid "customer code must be unique"
+msgstr "كود العميل يجب ان لا يتكرر"
+
+#. module: vegetables
+#: model:ir.actions.report.xml,name:vegetables.action_cust_inv_rep
+msgid "customers invoices"
+msgstr "فواتير العملاء"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_customers_invoices_rep_wizard
+msgid "customers.invoices.rep.wizard"
+msgstr "customers.invoices.rep.wizard"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_daily_inv_group_date_report_wizard
+msgid "daily_inv_group_date_report wizard"
+msgstr "daily_inv_group_date_report wizard"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_daily_inv_report_wizard
+msgid "daily_inv_report wizard"
+msgstr "daily_inv_report wizard"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_executed_line
+#: model:ir.model.fields,field_description:vegetables.field_vendors_invoice_executed
+msgid "executed"
+msgstr "executed"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_vendor_invoice_line_id
+msgid "line Reference"
+msgstr "مرجع السطر"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customers_inv_rep_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_group_date_report_report_view
+#: model:ir.ui.view,arch_db:vegetables.daily_inv_report_report_view
+#: model:ir.ui.view,arch_db:vegetables.post_customers_invoices_wizard_view_form
+#: model:ir.ui.view,arch_db:vegetables.vegetables_customer_sent_emails_from_view
+msgid "or"
+msgstr "أو"
+
+#. module: vegetables
+#: model:ir.ui.view,arch_db:vegetables.customer_invoice_report_tree
+msgid "rate"
+msgstr "معدل"
+
+#. module: vegetables
+#: model:ir.model.fields,field_description:vegetables.field_account_invoice_line_received_product
+msgid "received product"
+msgstr "استلام المنتج"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_report_vegetables_customers_inv_moves_rep
+msgid "report.vegetables.customers_inv_moves_rep"
+msgstr "report.vegetables.customers_inv_moves_rep"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.model_report_vegetables_print_customer_invoice_main_template
+msgid "report.vegetables.print_customer_invoice_main_template"
+msgstr "report.vegetables.print_customer_invoice_main_template"
+
+#. module: vegetables
+#: model:ir.model,name:vegetables.
