@@ -17,5 +17,5 @@
     'installable': True,
     'images': ['static/description/Automatic-Workflow-Cover.jpg'],
     'price': 0.00,
-    'currency': 'EUR',
+    'currency': 'SAR',
 }
